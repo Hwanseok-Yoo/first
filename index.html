@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>NICO</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="index.css" >
+  <title>ToDolist</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="index.css" >
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/cc1d78ecb9.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="js-clock">
-        <h1>
-            00:00
-        </h1>
-    </div>
+  <nav class="navbar">
+    <i class="fas fa-th-list"></i>
+  </nav>
 
+  <div class="content">
+    <div class="js-clock">
+      <h1>
+        00:00
+      </h1>
+    </div>
+  
     <form action="" class="js-form form">
-        <input type = "text" placeholder="What is your name">
+      <input type = "text" placeholder="What is your name">
     </form>
     <h4 class="js-greetings greetings"></h4>
-
+  
     <form action="" class="js-toDoForm">
         <input type="text", placeholder = "White a todo">
     </form>
     <ul class="js-toDoList">
-
     </ul>
     </form>
-    <span class="js-wheather"></span>
-    <script src="clock.js"></script>
-    <script src="gretting.js"></script>
-    <script src="todo.js"></script>
-    <script src="bg.js"></script>
-    <script src="whether.js"></script>
+    <b><span class="js-wheather"></span></b>
+  </div>
+  <script src="clock.js"></script>
+  <script src="gretting.js"></script>
+  <script src="todo.js"></script>
+  <script src="bg.js"></script>
+  <script src="whether.js"></script>
 </body>
 </html>
