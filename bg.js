@@ -2,13 +2,13 @@ const body = document.querySelector("body");
 
 const IMG_NUMBER = 4;
 
-
-
 function paintImage(imgNumber){
     const image = new Image();
     image.src = `./image/sam/${imgNumber+1}.jpg`;
-    image.classList.add("bgImage");
-    body.appendChild(image);
+    image.onload = function(){
+        image.classList.add("bgImage");
+        body.appendChild(image);
+    }
 }
 
 function genRandom(){
